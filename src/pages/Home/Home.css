@@ -1,0 +1,19 @@
+.popsicle-container img {
+    max-width: 66px;
+    max-height: 200px;
+    transform: rotate(35deg);
+}
+
+.popsicle-container {
+    position: absolute;
+    right: 190px;
+    top: -70px;
+    display: none;
+}
+
+
+@media (min-width: 640px) {
+    .popsicle-container {
+        display: block;
+    }
+}

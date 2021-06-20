@@ -1,0 +1,32 @@
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.hero-bg {
+    background-color: var(--neutral-50);
+}
+
+.hero h1 {
+    margin-top: 40px;
+}
+
+.hero-img {
+    max-width: 190px;
+}
+
+.hero-btn {
+    align-self: center;
+}
+
+.hero-btn button {
+    float: right;
+}
+
+
+@media (min-width: 640px) {
+    .hero {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+  

@@ -14,9 +14,6 @@ export const parameters = {
 };
 
 // Start mock service worker
-const { worker } = require('../src/mocks/browser');
-worker.start();
-worker.printHandlers();
 
 const StoryDecorator = (Story: any) => (
   <EnvProvider>

@@ -1,6 +1,5 @@
-import { Movie } from '../pages/Home';
 
-export const mockMovies: Array<Movie> = [
+export const mockMovies: Array<any> = [
   {
     name: 'The Shawshank Redemption',
     year: 1994,
