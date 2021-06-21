@@ -1,13 +1,18 @@
-import React from 'react';
 import { Hero } from '../../components/Hero/Hero';
 import popsicle from '../../assets/popsicle.png';
 import './Home.css';
+import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
+  const navigate = useNavigate();
+
+  const routeToSignIn: any = () => {
+    return navigate('/sign-in')
+  }
   return (
     <main>
       {/* Hero */}
-      <Hero></Hero>
+      <Hero onSignIn={() => routeToSignIn()}></Hero>
       {/* Body */}
       <div className="container body p-relative">
         <div className="popsicle-container">

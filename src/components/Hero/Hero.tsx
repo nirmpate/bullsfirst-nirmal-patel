@@ -2,7 +2,16 @@ import logo from '../../assets/bullsfirst-logo.svg';
 import './Hero.css';
 import { Button } from '../Button';
 
-export const Hero = () => {
+interface HeroType {
+    onSignIn: () => {}
+}
+
+export const Hero = (props: HeroType) => {
+
+    const onClick: any = () => {
+        return props.onSignIn();
+    };
+
     return (
         <div className="hero-bg">
             <div className="hero container">
@@ -13,7 +22,7 @@ export const Hero = () => {
                     </h1>
                 </div>
                 <div className="hero-btn">
-                    <Button variant="filled" color="primary" type="button" linkText="Sign In"/>
+                    <Button click={() => onClick()} variant="filled" color="primary" type="button" linkText="Sign In"/>
                 </div>
             </div>
         </div>
