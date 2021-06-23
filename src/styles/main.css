@@ -226,6 +226,13 @@ h6, .h6 {
 .footnote {
   font-size: 13px;
   font-style: italic;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .footnote {
+    text-align: left;
+  }
 }
 
 /* Breakpoints */

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="hero-bg"
+  >
+    <div
+      class="hero container"
+    >
+      <div>
+        <img
+          alt="Bullsfirst Logo"
+          class="hero-img"
+          src="bullsfirst-logo.svg"
+        />
+        <h1
+          class="title"
+        >
+          Get better results with Bullsfirst at the helm of your portfolio.
+        </h1>
+      </div>
+      <div
+        class="hero-btn"
+      >
+        <button
+          class="button button--filled button--primary"
+        >
+            Sign In 
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

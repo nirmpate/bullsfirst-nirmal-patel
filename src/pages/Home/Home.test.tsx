@@ -1,4 +1,3 @@
-import React from 'react';
 import { render } from '../../test/test-utils';
 import { Home } from './Home';
 
@@ -8,8 +7,8 @@ import { Home } from './Home';
 };
 
 describe('<Home />', () => {
-  // test('renders correctly', async () => {
-  //   const { findByTestId, findByText } = render(<Home />);
-  //   expect(await findByText('Top 10 Movies Of All Time')).toBeTruthy();
-  // });
+  test('renders correctly', async () => {
+    const { findByText } = render(<Home />);
+    expect(await findByText('Every account comes with:')).toBeTruthy();
+  });
 });
