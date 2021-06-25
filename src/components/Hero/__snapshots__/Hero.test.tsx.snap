@@ -6,7 +6,7 @@ exports[`renders correctly 1`] = `
     class="hero-bg"
   >
     <div
-      class="hero container"
+      class="hero container p-relative"
     >
       <div>
         <img
@@ -26,8 +26,16 @@ exports[`renders correctly 1`] = `
         <button
           class="button button--filled button--primary"
         >
-            Sign In 
+           Sign In
         </button>
+      </div>
+      <div
+        class="popsicle-container"
+      >
+        <img
+          alt="Popsicle"
+          src="popsicle.png"
+        />
       </div>
     </div>
   </div>
